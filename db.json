@@ -1,0 +1,35 @@
+{
+"talent" : [
+  {
+    "name": "Homer Simpson",
+    "location": "Springfield",
+    "date_of_birth": "1956-05-12"
+  },
+  {
+    "name": "Frank Reynolds",
+    "location": "Philidelphia",
+    "date_of_birth": "1944-11-17"
+  },
+  {
+    "name": "Diane Nguyen",
+    "location": "Los Angeles",
+    "date_of_birth": "1980-03-19"
+  },
+  {
+    "name": "Krusty the Clown",
+    "location": "SpringField",
+		"date_of_birth": "1957-10-29"
+  },
+  {
+    "name": "Jack Bauer",
+    "location": "Washington",
+		"date_of_birth": "1966-02-17"
+  },
+  {
+    "name": "Mark Hoppus",
+    "location": "San Diego",
+		"date_of_birth": "1972-03-15"
+  }
+
+]
+}

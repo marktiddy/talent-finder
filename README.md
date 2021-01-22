@@ -1,12 +1,16 @@
-# Getting Started with Create React App
+# About this App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is designed for use in a developer environment.
 
-## Available Scripts
+In order to represent real world data this app uses the Random User Generator API [https://randomuser.me/](https://randomuser.me/). Please see their site to view the object that is returned from an API request. We are specifying 10 uses for the purpose of this application
 
-In the project directory, you can run:
+### npm run server
 
-### `yarn start`
+This will watch the db.json file and run a JSON server on port 5000 which you can use to make API requests.
+
+## To run the frontend
+
+### 'yarn start'
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
