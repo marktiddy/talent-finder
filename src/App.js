@@ -3,8 +3,10 @@ import Sidebar from './components/Sidebar';
 import Talent from './components/Talent';
 import { useState, useEffect } from 'react';
 
+//Note - As this app scales we would remove a lot of logic from here and use this container as a router. This isnt needed for now
+
 //Global variable for our API URL - We might store this in a .env long term
-const APIURL = 'http://localhost:5000/talent';
+const APIURL = 'https://randomuser.me/api/?results=10';
 
 const App = () => {
   const [talent, setTalent] = useState([]);
@@ -13,6 +15,7 @@ const App = () => {
   useEffect(() => {
     const initTalent = async () => {
       const data = await loadTalent();
+      console.log(data);
       setTalent(data);
     };
 
@@ -25,7 +28,7 @@ const App = () => {
     try {
       const data = await fetch(APIURL);
       const res = await data.json();
-      return res;
+      return res.results;
     } catch (e) {
       setError('We had a problem loading the talent. Please try again later');
     }

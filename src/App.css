@@ -51,5 +51,42 @@ body {
 
 
 .error {
+  margin-top: 20px;
   color: red;
+}
+
+.talent-listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.talent-card {
+background: #eee;
+border-radius: 5px;
+padding: 10px;
+margin: 15px;
+text-align: center;
+display: flex;
+flex-direction: column;
+place-items: center;
+justify-content: center;
+-moz-box-shadow:    3px 3px 2px 2px #ccc;
+  -webkit-box-shadow: 3px 3px 2px 2px #ccc;
+  box-shadow:         3px 3px 2px 2px #ccc;
+}
+
+.talent-card img {
+  border-radius: 50px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.talent-card h3 {
+  font-weight: 500;
+}
+
+.talent-card p {
+  font-weight: 300;
 }

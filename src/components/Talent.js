@@ -6,9 +6,7 @@ const Talent = ({ talent, error }) => {
       <h2>Latest Talent</h2>
       <div className="talent-listings">
         {error && <p className="error">{error}</p>}
-        {talent.map((t, idx) => (
-          <TalentItem key={idx} profile={t} />
-        ))}
+        {!error && talent.map((t, idx) => <TalentItem key={idx} profile={t} />)}
       </div>
     </div>
   );
