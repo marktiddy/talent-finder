@@ -1,6 +1,6 @@
 # About this App
 
-This project is designed for use in a developer environment.
+This project is designed for use in a development environment.
 
 This data has a JSON server package installed to simulate a real world API. The data is stored in db.json and contains data aquired Random User Generator API [https://randomuser.me/](https://randomuser.me/). Please see their site to view the object that is returned from an API request. We are specifying 10 uses for the purpose of this application.
 
