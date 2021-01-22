@@ -1,14 +1,22 @@
 import Moment from 'moment';
 
-const TalentItem = ({ profile }) => {
+//Destructure out object for readibility of code
+const TalentItem = ({
+  profile: {
+    name: { first, last },
+    picture: { medium: profilePic },
+    location: { city },
+    dob: { date: birthday },
+  },
+}) => {
   return (
     <div className="talent-card">
       <h3>
-        {profile.name.first} {profile.name.last}
+        {first} {last}
       </h3>
-      <img src={profile.picture.medium} />
-      <p>{Moment(profile.dob.date).format('do MMMM Y')}</p>
-      <p>From {profile.location.city}</p>
+      <img src={profilePic} alt={`${first} ${last}`} />
+      <p>{Moment(birthday).format('do MMMM Y')}</p>
+      <p>From {city}</p>
     </div>
   );
 };

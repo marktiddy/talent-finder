@@ -2,7 +2,9 @@
 
 This project is designed for use in a developer environment.
 
-In order to represent real world data this app uses the Random User Generator API [https://randomuser.me/](https://randomuser.me/). Please see their site to view the object that is returned from an API request. We are specifying 10 uses for the purpose of this application
+This data has a JSON server package installed to simulate a real world API. The data is stored in db.json and contains data aquired Random User Generator API [https://randomuser.me/](https://randomuser.me/). Please see their site to view the object that is returned from an API request. We are specifying 10 uses for the purpose of this application.
+
+For this app to function in a development environment you need to ensure the JSON server and that React are both running.
 
 ### npm run server
 

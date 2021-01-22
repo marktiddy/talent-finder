@@ -75,6 +75,15 @@ justify-content: center;
 -moz-box-shadow:    3px 3px 2px 2px #ccc;
   -webkit-box-shadow: 3px 3px 2px 2px #ccc;
   box-shadow:         3px 3px 2px 2px #ccc;
+width: 25%;
+transition: all 300ms ease-in-out;
+}
+
+.talent-card:hover {
+  cursor: pointer;
+  -moz-box-shadow:    3px 3px 6px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 6px 6px #ccc;
+  box-shadow:         3px 3px 6px 6px #ccc;
 }
 
 .talent-card img {
@@ -89,4 +98,23 @@ justify-content: center;
 
 .talent-card p {
   font-weight: 300;
+}
+
+
+
+.filter h3 {
+  color: white;
+  margin-top: 40px;
+}
+
+.filter label {
+  color: white;
+  display: block;
+  margin-top: 20px;
+}
+
+.filter select {
+  margin-top: -20px;
+  padding: 10px;
+  max-width: 100%;
 }

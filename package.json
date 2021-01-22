@@ -6,9 +6,10 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "json-server": "^0.16.3",
     "moment": "^2.29.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
@@ -37,5 +38,10 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://randomuser.me"
+  "proxy": "https://randomuser.me",
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "react-test-renderer": "^17.0.1"
+  }
 }
