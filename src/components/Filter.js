@@ -1,3 +1,7 @@
+//Note
+//At the moment the filter uses a dropdown to ensure the place name will always match one of the talent selected
+//This could be expanded in the long term to select a country then city or have a search box
+
 const Filter = ({ locations, setFilter, filter }) => {
   return (
     <div className="filter">
