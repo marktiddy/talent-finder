@@ -51,5 +51,13 @@ describe('', () => {
   });
 });
 
+describe('check that change location dropdown changes the main data', () => {
+  const wrapper = mount(<App />);
+  wrapper
+    .find('select#age')
+    .simulate('change', { target: { currentValue: 'Pinhais' } });
+  expect(wrapper.find('.talent-card').text()).toInclude('Pinhais');
+});
+
 //Note with more development time we would check the filter is functioning with a test plus all other components
 //It could also have been built with a TDD approach with tests written prior to content created.

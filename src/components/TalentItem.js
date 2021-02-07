@@ -6,7 +6,7 @@ const TalentItem = ({
     name: { first, last },
     picture: { medium: profilePic },
     location: { city },
-    dob: { date: birthday },
+    dob: { date: birthday, realAge: age },
   },
 }) => {
   return (
@@ -16,6 +16,7 @@ const TalentItem = ({
       </h3>
       <img src={profilePic} alt={`${first} ${last}`} />
       <p>{Moment(birthday).format('do MMMM Y')}</p>
+      <p>{age}</p>
       <p>From {city}</p>
     </div>
   );
